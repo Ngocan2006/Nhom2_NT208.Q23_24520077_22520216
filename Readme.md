@@ -33,7 +33,7 @@ if ($product['stock'] <= 5)
 ```
 
 ### custome.phd
--Lỗi syntax thiếu ;
+- Lỗi syntax thiếu ;
 
 ```php
 $activeCustomers = [];
