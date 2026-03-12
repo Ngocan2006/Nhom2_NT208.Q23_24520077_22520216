@@ -12,6 +12,12 @@ $discountValue = $subtotal * ($discountPercent / 100)
 $shippingFee = $subtotal >= 50 ? 0 : 5;
 ```
 
+- Lỗi logic tính VAT, được tính sau khi đã giảm giá
+
+```php
+$vat = ($subtotal - $discountValue) * 0.1;
+```
+
 ### dashboard.phd
 - Lỗi logic tính revenge tings tiền thì phải lấy tiền * giá, trong khi code gốc giá trị tiền = số sản phẩm
 
