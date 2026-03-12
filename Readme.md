@@ -13,11 +13,10 @@ $shippingFee = $subtotal >= 50 ? 0 : 5;
 ```
 
 ### dashboard.phd
-- Lỗi logic tính revenge tings tiền thì phải lấy tiền * giá, trong khi code gốc fias trị tiền = số sản phẩm
+- Lỗi logic tính revenge tings tiền thì phải lấy tiền * giá, trong khi code gốc giá trị tiền = số sản phẩm
 
 ```php
 foreach ($order['items'] as $item) {
-    $price = $products[$item['sku']]['price'];
     $totalRevenue += $price * $item['qty'];
 }
 ```
